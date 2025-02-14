@@ -1,1 +1,1 @@
-# hmlr-webpack
+# HMLR Frontend Webpack Demo

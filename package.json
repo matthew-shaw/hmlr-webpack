@@ -1,0 +1,28 @@
+{
+  "name": "hmlr-webpack",
+  "version": "1.0.0",
+  "description": "HMLR Frontend with Webpack",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-shaw/hmlr-webpack.git"
+  },
+  "author": "Matt Shaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthew-shaw/hmlr-webpack/issues"
+  },
+  "homepage": "https://github.com/matthew-shaw/hmlr-webpack#readme",
+  "devDependencies": {
+    "prettier": "^3.5.1",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@hmlr/frontend": "^2.1.0-rc.2"
+  }
+}
