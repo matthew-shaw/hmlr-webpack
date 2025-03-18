@@ -7,7 +7,6 @@
     "build": "webpack",
     "format": "prettier . --write",
     "start": "webpack serve --open",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch"
   },
   "repository": {
@@ -20,15 +19,24 @@
     "url": "https://github.com/matthew-shaw/hmlr-webpack/issues"
   },
   "homepage": "https://github.com/matthew-shaw/hmlr-webpack#readme",
+  "dependencies": {
+    "@hmlr/frontend": "^2.1.0-rc.2"
+  },
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
-    "prettier": "^3.5.1",
-    "style-loader": "^4.0.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "npm-check-updates": "^17.1.15",
+    "prettier": "^3.5.3",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
-  },
-  "dependencies": {
-    "@hmlr/frontend": "^2.1.0-rc.2"
   }
 }
