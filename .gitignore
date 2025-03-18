@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,windows,linux,macos,visualstudiocode,jetbrains+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,windows,linux,macos,visualstudiocode,jetbrains+all
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,linux,macos,windows,jetbrains+all,visualstudiocode,sass
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,linux,macos,windows,jetbrains+all,visualstudiocode,sass
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -244,7 +244,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -292,6 +291,11 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Sass ###
+.sass-cache/
+*.sass.map
+*.scss.map
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -337,4 +341,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/git,node,windows,linux,macos,visualstudiocode,jetbrains+all
+# End of https://www.toptal.com/developers/gitignore/api/git,node,linux,macos,windows,jetbrains+all,visualstudiocode,sass
