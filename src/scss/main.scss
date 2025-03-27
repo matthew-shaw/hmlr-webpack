@@ -1,5 +1,11 @@
 $govuk-assets-path: "../../node_modules/govuk-frontend/dist/govuk/assets/";
 
+// Override the default HMLR Frontend font stack
+$govuk-font-family: "Arial", sans-serif;
+
+// Override the default HMLR Frontend colour
+$govuk-brand-colour: #789904;
+
 // 'Base' includes everything from settings, tools and helpers. Nothing
 // in the base outputs any CSS.
 
@@ -46,7 +52,7 @@ $govuk-assets-path: "../../node_modules/govuk-frontend/dist/govuk/assets/";
 // @import "govuk-frontend/dist/govuk/components/phase-banner";
 // @import "govuk-frontend/dist/govuk/components/radios";
 // @import "govuk-frontend/dist/govuk/components/select";
-// @import "govuk-frontend/dist/govuk/components/service-navigation";
+@import "govuk-frontend/dist/govuk/components/service-navigation";
 @import "govuk-frontend/dist/govuk/components/skip-link";
 // @import "govuk-frontend/dist/govuk/components/summary-list";
 // @import "govuk-frontend/dist/govuk/components/table";
