@@ -1,37 +1,50 @@
 {
   "name": "hmlr-webpack",
   "version": "1.0.0",
-  "description": "HMLR Frontend with Webpack",
+  "description": "HM Land Registry Frontend with Webpack",
   "private": true,
   "scripts": {
+    "prebuild": "npm run format:check && npm run lint:check",
     "build": "webpack",
-    "format": "prettier . --write",
-    "start": "webpack serve --open",
-    "watch": "webpack --watch"
+    "format:check": "prettier src --check",
+    "format:fix": "prettier src --write",
+    "lint:check": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matthew-shaw/hmlr-webpack.git"
   },
-  "author": "Matt Shaw",
+  "author": {
+    "name": "Matt Shaw",
+    "url": "https://matthew-shaw.github.io/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/matthew-shaw/hmlr-webpack/issues"
   },
   "homepage": "https://github.com/matthew-shaw/hmlr-webpack#readme",
   "dependencies": {
-    "@hmlr/frontend": "2.0.0"
+    "govuk-frontend": "5.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^9.23.0",
     "babel-loader": "^10.0.0",
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
     "html-webpack-plugin": "^5.6.3",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
     "mini-css-extract-plugin": "^2.9.2",
-    "npm-check-updates": "^17.1.15",
+    "npm-check-updates": "^17.1.16",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.1.5",
     "prettier": "^3.5.3",
     "sass": "^1.86.0",
     "sass-loader": "^16.0.5",

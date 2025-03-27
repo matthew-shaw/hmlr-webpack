@@ -1,9 +1,9 @@
-FROM node:iron-alpine
+FROM node:jod-alpine
 
-WORKDIR /app
+WORKDIR /web
 
-COPY .browserslistrc babel.config.json package*.json webpack.config.js ./
-COPY src ./src
+COPY .browserslistrc eslint.config.mjs package*.json webpack.config.js ./
+COPY src src
 
 RUN npm install && \
     npm run build
