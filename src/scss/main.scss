@@ -52,8 +52,8 @@ $govuk-brand-colour: #789904;
 // @import "govuk-frontend/dist/govuk/components/phase-banner";
 // @import "govuk-frontend/dist/govuk/components/radios";
 // @import "govuk-frontend/dist/govuk/components/select";
-@import "govuk-frontend/dist/govuk/components/service-navigation";
-@import "govuk-frontend/dist/govuk/components/skip-link";
+// @import "govuk-frontend/dist/govuk/components/service-navigation";
+// @import "govuk-frontend/dist/govuk/components/skip-link";
 // @import "govuk-frontend/dist/govuk/components/summary-list";
 // @import "govuk-frontend/dist/govuk/components/table";
 // @import "govuk-frontend/dist/govuk/components/tabs";
@@ -76,7 +76,7 @@ $govuk-brand-colour: #789904;
 // element. Override classes always include `-!-` in the class name.
 // Approximately 15% of the CSS output if you include everything.
 
-@import "govuk-frontend/dist/govuk/overrides";
+// @import "govuk-frontend/dist/govuk/overrides";
 
 /*
 // Alternatively, you can import the specific groups of overrides
