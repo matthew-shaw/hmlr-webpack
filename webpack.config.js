@@ -11,7 +11,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, "dist"),
   },
-  entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
+  entry: ["./src/scss/main.scss"],
   output: {
     filename: "hmlr-frontend.min.js",
     path: path.resolve(__dirname, "dist"),
@@ -43,35 +43,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.(?:js|mjs|cjs)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              [
-                "@babel/preset-env",
-                {
-                  bugfixes: true,
-                  loose: true,
-                },
-              ],
-            ],
-          },
-        },
-      },
-      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
         generator: {
           filename: "assets/images/[name][ext][query]",
-        },
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "assets/fonts/[name][ext][query]",
         },
       },
     ],
@@ -83,7 +58,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: "./node_modules/govuk-frontend/dist/govuk/assets",
+          from: "src/assets",
           to: "assets",
         },
       ],
