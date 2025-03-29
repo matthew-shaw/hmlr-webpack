@@ -32,6 +32,12 @@
           ? " govuk-frontend-supported"
           : "");
     </script>
+    <a
+      href="#main-content"
+      class="govuk-skip-link"
+      data-module="govuk-skip-link"
+      >Skip to main content</a
+    >
     <header
       class="govuk-header govuk-header--full-width-border"
       data-module="govuk-header"
@@ -83,7 +89,8 @@
         </div>
       </div>
     </header>
-    <div
+    <section
+      aria-label="Service information"
       class="govuk-service-navigation"
       data-module="govuk-service-navigation"
     >
@@ -131,7 +138,7 @@
           </nav>
         </div>
       </div>
-    </div>
+    </section>
     <div class="govuk-width-container">
       <main class="govuk-main-wrapper" id="main-content">
         <h1 class="govuk-heading-xl">Hello, World!</h1>
