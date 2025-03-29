@@ -13,9 +13,9 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-  entry: ["./src/scss/main.scss"],
+  entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
-    filename: "hmlr-frontend.min.js",
+    filename: "hmlr.min.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -45,6 +45,24 @@ module.exports = {
         ],
       },
       {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              [
+                "@babel/preset-env",
+                {
+                  bugfixes: true,
+                  loose: true,
+                },
+              ],
+            ],
+          },
+        },
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
         generator: {
@@ -55,7 +73,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "hmlr-frontend.min.css",
+      filename: "hmlr.min.css",
     }),
     new CopyPlugin({
       patterns: [
