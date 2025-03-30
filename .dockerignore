@@ -1,0 +1,9 @@
+.git
+.github
+.gitignore
+.nvmrc
+dist
+LICENSE
+node_modules
+README.md
+screenshot.png
