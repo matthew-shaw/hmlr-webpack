@@ -21,7 +21,7 @@ module.exports = {
   },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
   output: {
-    filename: "hmlr.min.js",
+    filename: "hmlr.[contenthash].min.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -79,7 +79,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "hmlr.min.css",
+      filename: "hmlr.[contenthash].min.css",
     }),
     new PurgeCSSPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
