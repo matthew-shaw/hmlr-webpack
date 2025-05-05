@@ -1,4 +1,5 @@
 const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const glob = require("glob");
@@ -16,7 +17,6 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     static: path.resolve(__dirname, "dist"),
-    compress: true,
     port: 9000,
   },
   entry: ["./src/js/main.mjs", "./src/scss/main.scss"],
@@ -78,6 +78,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CompressionPlugin({ test: /(\.js|\.css)(\?.*)?$/i }),
     new MiniCssExtractPlugin({
       filename: "hmlr.[contenthash].min.css",
     }),
