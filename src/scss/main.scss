@@ -6,6 +6,9 @@ $govuk-font-family: "Arial", sans-serif;
 // Override the default GOV.UK Frontend brand colour
 $govuk-brand-colour: #0b0c0c;
 
+// Override the default GOV.UK page width
+$govuk-page-width: 1200px;
+
 // 'Base' includes everything from settings, tools and helpers. Nothing
 // in the base outputs any CSS.
 
