@@ -1,6 +1,6 @@
 # HM Land Registry Frontend Webpack Demo
 
-![Static Badge](https://img.shields.io/badge/GOV.UK%20Frontend-v5.9.0-blue)
+![Static Badge](https://img.shields.io/badge/GOV.UK%20Frontend-v5.13.0-blue)
 
 ![Screenshot](screenshot.png)
 
@@ -74,12 +74,12 @@ The same approach applies to JS; the `main.mjs` file at `/src/js` only imports J
 
 > **Note**: The JS for the Header component is not needed when using the newer [Service navigation](https://design-system.service.gov.uk/components/service-navigation/) component alongside it.
 
-For comparison (using GOV.UK Frontend v5.9.0):
+For comparison (using GOV.UK Frontend v5.10.0):
 
 | Asset           | Size (KB) |
 | --------------- | --------- |
-| Precompiled CSS | 127       |
-| Selective CSS   | 18 (-86%) |
+| Precompiled CSS | 128       |
+| Selective CSS   | 19 (-85%) |
 | Precompiled JS  | 49        |
 | Selective JS    | 5 (-90%)  |
 

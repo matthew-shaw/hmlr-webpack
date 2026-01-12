@@ -1,10 +1,13 @@
 $govuk-assets-path: "../../node_modules/govuk-frontend/dist/govuk/assets/";
 
-// Override the default GOV.UK Frontend font stack
+// HMLR font stack
 $govuk-font-family: "Arial", sans-serif;
 
-// Override the default GOV.UK Frontend brand colour
-$govuk-brand-colour: #789904;
+// HMLR brand colour
+$govuk-brand-colour: #0b0c0c;
+
+// Override the default GOV.UK page width
+$govuk-page-width: 1200px;
 
 // 'Base' includes everything from settings, tools and helpers. Nothing
 // in the base outputs any CSS.
@@ -28,7 +31,7 @@ $govuk-brand-colour: #789904;
 // @import "govuk-frontend/dist/govuk/components/accordion";
 // @import "govuk-frontend/dist/govuk/components/back-link";
 // @import "govuk-frontend/dist/govuk/components/breadcrumbs";
-@import "govuk-frontend/dist/govuk/components/button";
+// @import "govuk-frontend/dist/govuk/components/button";
 // @import "govuk-frontend/dist/govuk/components/character-count";
 // @import "govuk-frontend/dist/govuk/components/checkboxes";
 @import "govuk-frontend/dist/govuk/components/cookie-banner";

@@ -1,4 +1,7 @@
 {
+  "short_name": "HMLR",
+  "name": "HM Land Registry",
+  "description": "HM Land Registry Frontend",
   "icons": [
     {
       "src": "images/favicon.ico",
@@ -35,5 +38,10 @@
       "sizes": "1280x1280",
       "purpose": "monochrome"
     }
-  ]
+  ],
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "orientation": "natural",
+  "start_url": "/",
+  "theme_color": "#0b0c0c"
 }
